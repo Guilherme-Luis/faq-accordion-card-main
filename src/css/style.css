@@ -1,0 +1,88 @@
+body{
+    height: 100vh;
+    background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+main{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+main .Main-Body{
+    border: 0.1px solid hsl(240, 58%, 58%);
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    border-radius: 15px;
+    width: 850px;
+    height: 450px;
+
+}
+.Scope-Image{
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.Scope-FAQ{
+    width: 450px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    overflow: hidden;
+    gap: 15px;
+}
+.Lines{
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: -250px;
+    left: -410px;
+}
+.Woman{
+    position: absolute;
+    left: -80px;
+}
+.Box{
+    height: 40%;
+    position: absolute;
+    top: 142px;
+    left: -90px;
+    object-fit: cover;
+}
+.Main-Topics{
+    border-bottom: 2px solid rgb(217, 214, 214);
+    color: rgb(175, 174, 174);
+}
+.Topics{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bolder;
+}
+summary{
+    cursor: pointer;
+    background-image: url('../image/icon-arrow-down.svg');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: right;
+    transition: transform 0.3s;
+}
+details[open] summary {
+    font: bolder;
+    color: black;
+    background-image: url('../image/icon-arrow-up.png');
+}
+details:not([open]) > .Content {
+    display: none;
+}
+.Content{
+    font-size: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
